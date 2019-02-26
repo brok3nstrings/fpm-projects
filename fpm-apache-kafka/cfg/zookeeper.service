@@ -1,0 +1,10 @@
+[Unit]
+Description=Zookeeper server for kafka
+
+[Service]
+ExecStart=/opt/kafka/bin/zookeeper-server-start.sh /etc/kafka/zookeeper.properties
+ExecStop=/opt/kafka/bin/zookeeper-server-start.sh
+
+[Install]
+WantedBy=multi-user.target
+
